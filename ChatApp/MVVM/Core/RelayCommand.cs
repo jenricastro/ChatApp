@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Client.MVVM.Core
+namespace ChatClient.MVVM.Core
 {
     public class RelayCommand : ICommand
     {
