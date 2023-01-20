@@ -9,7 +9,7 @@
         Title="MainWindow"
         Height="474"
         Width="816"
-        Background="ForestGreen">
+        Background="CadetBlue">
 
     <Window.DataContext>
         <viewmodel:MainViewModel />

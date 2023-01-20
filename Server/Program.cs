@@ -33,6 +33,8 @@ namespace ChatServer
             {
                 foreach (var usr in _users)
                 {
+
+                    /* accepts the client into the server*/
                     var broadcastPacket = new PacketBuilder();
                     broadcastPacket.WriteOpCode(1);
                     broadcastPacket.WriteMessage(usr.Username);

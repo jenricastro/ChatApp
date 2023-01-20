@@ -19,8 +19,11 @@ namespace ChatClient.Net
             _client = new TcpClient();
         }
 
+
+        /*function that connects to the server*/
         public void ConnectToServer(string username)
         {
+            /*err handle to make sure we dont connect back again if connected already*/
             if (!_client.Connected)
             {
                 _client.Connect("127.0.0.1", 3000);

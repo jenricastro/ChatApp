@@ -14,6 +14,7 @@ namespace ChatClient.Net.IO
             _ns = ns;
         }
 
+        /* read the message*/
         public string ReadMessage()
         {
             byte[] msgBuffer;

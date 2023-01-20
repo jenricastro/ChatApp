@@ -7,6 +7,7 @@ namespace ChatServer
 {
     class Client
     {
+        
         public string Username { get; set; }
         public Guid UID { get; set; }
         public TcpClient ClientSocket { get; set; }
@@ -15,6 +16,7 @@ namespace ChatServer
 
         public Client(TcpClient client)
         {
+            /*helps specify the client n connection*/
             ClientSocket = client;
             UID = Guid.NewGuid();
             _packetReader = new PacketReader(ClientSocket.GetStream());
